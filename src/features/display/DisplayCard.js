@@ -15,6 +15,7 @@ const DisplayCard = ({ item }) => {
                 <CardTitle>{name}</CardTitle>
                 <CardText>{description}</CardText>
             </CardBody>
+
         </Card>
     );
 };
