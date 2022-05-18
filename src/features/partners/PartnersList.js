@@ -9,7 +9,7 @@ const PartnersList = () => {
             <Row>
             {partners.map((partner) => {
                     return (
-                        <div className='d-flex mb-5' key='partner.id'>
+                        <div className='d-flex mb-5' key={partner.id}>
                         <Partner partner={partner}/>
                         </div>
                 );

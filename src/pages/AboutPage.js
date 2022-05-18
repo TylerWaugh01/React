@@ -48,7 +48,7 @@ const AboutPage = () => {
                                 will go where there is no path, and I will leave
                                 a trail.
                             </p>
-                            <footer class='blockquote-footer'>
+                            <footer className='blockquote-footer'>
                                     Muriel Strode,{' '}
                                     <cite title='Source Title'>
                                         "Wind-Wafted Wild Flowers" - The Open Court,
