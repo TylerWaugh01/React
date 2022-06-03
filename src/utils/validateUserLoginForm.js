@@ -13,8 +13,6 @@ export const validateUserLoginForm = (values) => {
         errors.password = 'Required';
     } else if (values.password.length < 8) {
         errors.password = 'Must be at least 8 characters.';
-    } else if (values.password.length > 15) {
-        errors.password = 'Must be 15 characters or less';
-    }       
+    }  
 return errors;
 };
