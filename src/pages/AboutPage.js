@@ -3,6 +3,7 @@ import SubHeader from '../components/SubHeader';
 import PartnersList from '../features/partners/PartnersList';
 
 
+
 const AboutPage = () => {
     return (
             <Container>

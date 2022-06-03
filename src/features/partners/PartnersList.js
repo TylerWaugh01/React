@@ -3,6 +3,7 @@ import { Row, Col } from 'reactstrap'
 import Partner from './Partner'
 import { selectAllPartners } from './partnersSlice';
 
+
 const PartnersList = () => {
     const partners = useSelector(selectAllPartners);
     return (

@@ -6,6 +6,7 @@ import CampsiteDetail from '../features/campsites/CampsiteDetail';
 import CommentsList from '../features/comments/CommentsList';
 import SubHeader from '../components/SubHeader';
 
+
 const CampsiteDetailPage = () => {
     const { campsiteId } = useParams();
     const campsite = useSelector(selectCampsiteById(campsiteId));

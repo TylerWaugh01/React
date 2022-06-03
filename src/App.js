@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
 import './App.css';
 import CampsiteDetailPage from './pages/CampsiteDetailPage';
+import React from 'react';
 
 function App() {
   return (
