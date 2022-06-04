@@ -1,5 +1,5 @@
-import { useSelector } from 'react-redux'; 
-import { Container, Row} from 'reactstrap';
+import { useSelector } from 'react-redux';
+import { Container, Row } from 'reactstrap';
 import { useParams } from 'react-router-dom';
 import { selectCampsiteById } from '../features/campsites/campsitesSlice';
 import CampsiteDetail from '../features/campsites/CampsiteDetail';
@@ -12,7 +12,7 @@ import Loading from '../components/Loading';
 const CampsiteDetailPage = () => {
     const { campsiteId } = useParams();
     const campsite = useSelector(selectCampsiteById(campsiteId));
-    console.log('campsites:', campsite); 
+    console.log('campsites:', campsite);
 
     const isLoading = useSelector((state) => state.campsites.isLoading);
     const errMsg = useSelector((state) => state.campsites.errMsg);
@@ -31,14 +31,14 @@ const CampsiteDetailPage = () => {
         );
     }
 
-        return (
-            <Container>
-                {campsite && <SubHeader current={campsite.name} detail={true} />}
-                <Row>{content}</Row>
-            </Container>
+    return (
+        <Container>
+            {campsite && <SubHeader current={campsite.name} detail={true} />}
+            <Row>{content}</Row>
+        </Container>
     )
 };
 
 
-export default CampsiteDetailPage; 
+export default CampsiteDetailPage;
 
